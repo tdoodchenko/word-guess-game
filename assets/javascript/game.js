@@ -1,4 +1,5 @@
 // Select random word from array and display characters of word with '_' 
+window.onload = function(){
 
 var WordsArray = ["apple", "cherry", "blueberry", "pecan", "pizza", "peach"] 
 var RandoWord = Math.floor(Math.random() * WordsArray.length)
@@ -9,14 +10,22 @@ for (var i =0; i < WordChars.length; i++) {
     Underscore.push("_ ")
 }
 
-console.log (RandoWord)
-console.log (Underscore)
-var stringChars = Underscore.join("")
-document.querySelector(".Word-ShowChar").innerHTML = stringChars
+var StrChars = Underscore.join("")
+document.getElementById("output").innerHTML = StrChars
 
-document.querySelector(".guesses").innerHTML = Underscore
-var guesses=10
+var Guesses = 8
+document.getElementById("guesses").innerHTML= Guesses
 
-// Show the amount of Guesses remaining
-// Listen for player typing letters
-// Add letters in place of '_'. Otherwise Remove 1 guess and document the wrong guesses
+var 
+
+// enter key
+document.addEventListener("keypress", (event) {
+    ver KeyWrd = string.fromCharCode(event.keyCode);
+
+    if(KeyWrd.indexOf(RandoWord) > -1) {
+        conole.log(true);
+    }
+}
+}
+
+
