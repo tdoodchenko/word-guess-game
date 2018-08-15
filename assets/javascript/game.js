@@ -52,7 +52,7 @@ document.addEventListener("keyup", function(event) {
     if  (Underscore.indexOf("_ ") == -1) {
         wins++;
         document.getElementById("wins").innerHTML = wins;
-        alert("You Won!");
+        alert("You guessed " + wordX + " pie... You Won!");
         resetGame()
 
     }
